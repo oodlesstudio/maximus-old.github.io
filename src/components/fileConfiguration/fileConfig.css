@@ -1,0 +1,412 @@
+/* Config Left */
+.configMainContent .configLeft {
+  width: 61.13%;
+}
+.configLeftHead,
+.configRightHead {
+  height: 43px;
+}
+.fileConfigHead {
+  letter-spacing: 0.03em;
+}
+.configTopBlueBox {
+  padding: 0 16px;
+  min-height: 218px;
+}
+.configLeftFilters {
+  padding: 12px 0;
+}
+.allFiltersBtn {
+  width: 98px;
+  height: 28px;
+  border: 1px solid var(--color-primary-default);
+}
+.configLeft .btnsBtm {
+  margin: 16px 0 24px;
+}
+.configBottomHeadingBox {
+  height: 60px;
+  padding-top: 24px;
+}
+.breadCrumbLeft {
+  display: none !important;
+}
+.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: var(--color-headerTooltip);
+}
+
+@media (max-width: 992px) {
+  .configMainContent .configLeft {
+    width: 100%;
+  }
+  .breadCrumbLeft {
+    display: inherit !important;
+  }
+  .configRightHead {
+    display: none !important;
+  }
+  .configLeftBottom {
+    padding-bottom: 24px !important;
+  }
+  .configBottomHeadingBoxRight {
+    height: 24px;
+  }
+  .configRightBottom {
+    padding-bottom: 0 !important;
+  }
+}
+@media (max-width: 426px) {
+  .configLeftHead {
+    flex-direction: column-reverse;
+    align-items: flex-start !important;
+    height: inherit;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .fileConfigHead {
+    font-size: var(--font-size16);
+    margin-top: 8px;
+  }
+}
+/* Config Blue Box Absolute */
+.absoluteFiltersBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  /* display: none; */
+}
+.absoluteFiltersBox .configSelectBoxTop {
+  margin-top: 11px;
+}
+.absoluteFiltersBox .clientNameSelect {
+  margin-bottom: 16px;
+}
+.absoluteFiltersBox .col,
+.configTopBlueBox .col {
+  flex: inherit;
+  padding: 0 8px;
+  width: 33.33%;
+}
+.absoluteFiltersBox .filtersInputNumber {
+  height: 38px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 4px;
+  padding-left: 16px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+  width: 100%;
+  background-color: var(--border-box-bg);
+}
+.absoluteFiltersBox .filtersInputNumber::placeholder {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+}
+.absoluteFiltersBox .btnsBtm {
+  margin-top: 8px;
+}
+.absoluteFiltersBox .allFiltersBtn {
+  background-color: transparent;
+  border: none;
+  width: inherit;
+  height: inherit;
+}
+@media (max-width: 767px) {
+  .absoluteFiltersBox .col,
+  .configTopBlueBox .col {
+    flex: inherit;
+    padding: 0 8px;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .configLeft .btnsBtm .btnPrimary,
+  .configLeft .btnsBtm .btnPrimaryOutline {
+    width: 150px;
+  }
+  .configLeft .btnsBtm {
+    margin-top: 8px;
+  }
+}
+/* Table Border Box */
+.tableBorderBox .tableContentBox {
+  height: 560px;
+}
+.tableBorderBox .table {
+  --bs-table-striped-bg: var(--table-striped-color);
+  --bs-table-striped-color: var(--color-black);
+  --bs-table-hover-bg: var(--color-light-blue);
+  --bs-table-hover-color: var(--color-black);
+  color: var(--color-black);
+  width: 805px;
+}
+.tableBorderBox .table thead {
+  position: sticky;
+  top: 0;
+}
+.tableBorderBox .table thead tr th {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size14);
+  background-color: var(--color-secondary-light-defaut);
+  height: 41px;
+  padding: 0;
+  padding-left: 14px;
+  vertical-align: middle;
+}
+.tableBorderBox .table thead tr th:first-child,
+.tableBorderBox .table tbody tr td:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.tableBorderBox .table thead tr th:last-child,
+.tableBorderBox .table tbody tr td:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.tableBorderBox .table tbody tr td {
+  font-size: var(--font-size14);
+  height: 64px;
+  padding: 0;
+  padding-left: 14px;
+}
+.tableBorderBox .table tbody tr {
+  border-bottom: 1px solid var(--color-table-border);
+}
+.tableBorderBox .table tbody tr:last-child {
+  border-bottom: none;
+}
+/* Table Scroll Bar */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar:vertical {
+  display: none;
+}
+::-webkit-scrollbar:horizontal {
+  height: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-scrollbar);
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background-color: var(--color-background-default);
+}
+
+/* Select Box */
+.configSelectBoxTop {
+  margin-top: 20px;
+}
+.clientNameSelect {
+  width: 30.4%;
+}
+.clientNameSelect label {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+.clientNameSelect label span {
+  color: var(--color-secondary-default);
+}
+.clientNameSelect .css-1s2u09g-control {
+  background-color: var(--border-box-bg);
+  border-color: var(--color-border-default);
+}
+.clientNameSelect .css-319lph-ValueContainer {
+  padding: 0 0 0 14px;
+}
+.clientNameSelect .css-1pahdxg-control,
+.clientNameSelect .css-26l3qy-menu {
+  background-color: var(--border-box-bg);
+  color: var(--color-black);
+}
+.clientNameSelect .css-14el2xx-placeholder {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+  margin: 0;
+}
+.clientNameSelect .css-6j8wv5-Input {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+}
+.clientNameSelect .css-1okebmr-indicatorSeparator {
+  display: none;
+}
+.clientNameSelect .css-tj5bde-Svg {
+  fill: var(--color-primary-default);
+}
+.clientNameSelect .css-tlfecz-indicatorContainer {
+  padding-left: 0;
+}
+.configFormatEntities {
+  width: 131px;
+}
+.reactSelectBox__option {
+  background-color: white;
+}
+.reactSelectBox__option:hover {
+  background-color: var(--selectbox-hover);
+}
+
+/* Config Right */
+.configMainContent .configRight {
+  width: 37.67%;
+  padding-bottom: 16px;
+}
+@media (min-width: 1600px) {
+  .tableBorderBox .table {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .configMainContent .configRight {
+    width: 100%;
+  }
+}
+@media (max-width: 426px) {
+  .tableBorderBox .table thead tr th,
+  .tableBorderBox .table tbody tr td {
+    font-size: var(--font-size12);
+  }
+}
+/* Config Right Top */
+.configTopBlueBoxRight {
+  padding: 26px 20px;
+  height: 218px;
+}
+.configDotLeftContent {
+  width: 95px;
+  letter-spacing: 0.02em;
+}
+.configDotCenterContent {
+  width: 4px;
+  margin: 0 8px;
+  letter-spacing: 0.02em;
+}
+.configDotRightContent {
+  width: calc(100% - 114px);
+}
+.configDotRightContent .clientNameSelect {
+  width: 100%;
+}
+@media (max-width: 426px) {
+  .configDotCenterContent{
+    display: none !important;
+  }
+  .configTopBlueBoxRight{
+    padding: 16px 16px 4px;
+    height: inherit;
+  }
+  .configTopBlueBoxRight .d-flex{
+    flex-direction: column;
+    margin-bottom: 12px !important;
+  }
+  .configDotLeftContent{
+    width: 100%;
+    margin-bottom: 4px;
+  }
+  .configDotRightContent{
+    width: 100% !important;
+  }
+}
+/* Config Right Bottom */
+.tableBorderBox .configTableRight {
+  width: 100%;
+}
+.tableBorderBox .configTableRight thead tr th:first-child {
+  padding-left: 16px;
+}
+.tableBorderBox .configTableRight tbody tr td:first-child {
+  padding-left: 16px;
+}
+.tableBorderBox .configTableRight thead tr th:last-child {
+  padding-right: 8px;
+}
+.tableBorderBox .configTableRight tbody tr td:last-child {
+  padding-right: 8px;
+}
+.tableBorderBox .configTableRight input[type="number"] {
+  border: 1px solid var(--color-border-default);
+  border-radius: 4px;
+  width: 100%;
+  height: 30px;
+  padding-left: 12px;
+  font-family: "Inter";
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+  background-color: var(--border-box-bg);
+}
+.tableBorderBox .configTableRight input[type="number"]::placeholder {
+  font-family: "Inter";
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+}
+.tableBorderBox .configTableRight .terminalInputTwo {
+  width: 100% !important;
+}
+
+/* Pagination */
+.pagination {
+  margin-bottom: 0;
+}
+.pagination .paginationBottom {
+  border: none;
+  font-size: 12px;
+  padding: 0;
+  letter-spacing: 0.02em;
+  color: var(--color-black);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin-right: 6px;
+  background-color: transparent;
+}
+.pagination .active .paginationBottom,
+.pagination .paginationBottom:hover {
+  background-color: var(--color-primary-default);
+  font-weight: 500;
+  color: var(--color-white);
+}
+.previousPagination,
+.nextPagination {
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0;
+  letter-spacing: 0.02em;
+  color: var(--color-primary-default);
+  display: flex;
+  align-items: center;
+  height: 24px;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.previousPagination {
+  margin-right: 4px;
+}
+.previousPagination span:last-child {
+  margin-left: 2px;
+}
+.nextPagination {
+  margin-left: 4px;
+}
+.nextPagination span:first-child {
+  margin-right: 2px;
+}
+.previousPagination:hover,
+.nextPagination:hover {
+  background-color: transparent;
+}
